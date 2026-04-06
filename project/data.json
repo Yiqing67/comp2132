@@ -1,0 +1,9 @@
+[
+  { "word": "javascript", "hint": "A popular programming language for the web." },
+  { "word": "variable", "hint": "A container for storing data values." },
+  { "word": "function", "hint": "A block of code designed to perform a particular task." },
+  { "word": "styling", "hint": "What CSS is used for." },
+  { "word": "browser", "hint": "Software used to access the internet." },
+  { "word": "object", "hint": "A standalone entity, with properties and type in JS." },
+  { "word": "animation", "hint": "The illusion of movement created by showing a series of pictures." }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COMP2132 Hangman Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Hangman</h1>
+    </header>
+
+    <main class="game-container">
+        <div class="hangman-display">
+            <img id="hangman-img" src="images/hangman-0.png" alt="Hangman Graphic">
+        </div>
+
+        <div class="game-info">
+            <p id="hint-display">Hint: Loading...</p>
+            <div id="word-display" class="word-display"></div>
+            <p class="mistakes-count">Incorrect Guesses: <span id="mistakes">0</span> / 6</p>
+        </div>
+
+        <div id="keyboard" class="keyboard"></div>
+    </main>
+
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="game-result-title">You Won!</h2>
+            <p id="game-result-text">The word was: </p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+</body>
+</html>
