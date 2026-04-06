@@ -56,6 +56,7 @@ function startNewGame() {
     GameState.currentHint = GameState.wordList[randomIndex].hint;
 
     hangmanImg.src = `images/hangman-0.png`;
+    document.body.style.backgroundImage = `url('images/hangman-0.png')`;
     hintDisplay.innerText = `Hint: ${GameState.currentHint}`;
     mistakesDisplay.innerText = GameState.mistakes;
     modal.style.display = "none";
@@ -91,6 +92,7 @@ function handleGuess(letter) {
         GameState.mistakes++;
         mistakesDisplay.innerText = GameState.mistakes;
         hangmanImg.src = `images/hangman-${GameState.mistakes}.png`;
+        document.body.style.backgroundImage = `url(images/hangman-${GameState.mistakes}.png)`;
         checkLossCondition();
     }
 }

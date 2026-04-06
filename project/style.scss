@@ -19,10 +19,10 @@ $wrong-color: #e74c3c;
 }
 
 body {
-    background-color: $bg-color;
     color: $text-color;
     @include flex-center(column);
     min-height: 100vh;
+    background-image: url(images/hangman-0.png)
 }
 
 header {
@@ -35,7 +35,6 @@ header {
 }
 
 .game-container {
-    background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -74,6 +73,10 @@ header {
     .mistakes-count {
         font-size: 1.1rem;
         font-weight: bold;
+        background-color: #dadd03;
+        padding: 6px 16px;
+        border-radius: 6px;
+        display: inline-block;
         #mistakes {
             color: $wrong-color;
         }
@@ -89,8 +92,8 @@ header {
     button {
         padding: 10px 15px;
         font-size: 1.2rem;
-        background-color: $primary-color;
-        color: #fff;
+        background-color: #dadd03;
+        color: #000000;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -113,11 +116,9 @@ header {
     display: none;
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.7);
     z-index: 1000;
 
     .modal-content {
-        background-color: #fff;
         padding: 40px;
         border-radius: 8px;
         text-align: center;
